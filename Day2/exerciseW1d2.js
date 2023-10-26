@@ -128,6 +128,20 @@ for (let number = 6; number <= 7; number++){
 }
 console.log ("---------------------------------------------------No 3");
 
+let numberJordan = 6;
+let isPrimeJordan = true;
+if (numberJordan < 2) {
+    isPrimeJordan = false;
+} else {
+    for (let i_Jordan = 2; i_Jordan < numberJordan; i_Jordan++){
+        if (numberJordan % i_Jordan === 0) isPrimeJordan = false;
+    }
+}
+console.log (numberJordan, isPrimeJordan ? "is a prime number" : "is not a prime number");
+console.log ("--------------------Dari Kak Jordan-------------------------------No 3");
+
+
+
 // write a code to find the sum of the numbers 1 to N
 /*
     Pseudocode 
@@ -179,6 +193,13 @@ console.log (`${message} = ${sum}`);
 console.log (`${message2} = ${sum2}`);
 console.log ("---------------------------------------------------No 4");
 
+let numberJordanSUM = 5;
+let resultJordanSUM = 0;
+for (let j_Jordan = 1; j_Jordan <= numberJordanSUM; j_Jordan++){
+    resultJordanSUM += j_Jordan;
+}
+console.log ("SUM", resultJordanSUM);
+
 // Write a code to find factorial of number
 /*
     Psudocode 
@@ -216,9 +237,18 @@ console.log ("---------------------------------------------------No 4");
 
 console.log ("------------------------Error----------------------No 5");
 
+let factorialResult = 1;
+let numberFactorial = 5;
+
+for (let iFactorial = 1; iFactorial <= numberFactorial; iFactorial++){
+    factorialResult *= iFactorial;
+}
+console.log ("Factorial", factorialResult);
+console.log ("------------------------Dari Kak Jordan----------------------No 5");
+
 // w
 // fibonacci
-numberF = 15;
+let numberF = 15;
 let temp1 = 0;
 let temp2 = 1;
 let temp3 = 0;
